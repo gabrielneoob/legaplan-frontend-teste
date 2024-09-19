@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+@import '../../styles//mixins';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3.3rem;
+  align-items: center;
+  border-bottom: 1px solid $border-bottom;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-weight: 400;
+    color: $title-color;
+  }
+
+  @include respond-to(small) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    align-items: flex-start;
+    gap: 0.6rem;
+
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+}
