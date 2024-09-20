@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+@import '../../styles//mixins';
+
+.container {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include respond-to(small) {
+    margin: 0 1rem;
+    width: auto;
+  }
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid $border-card;
+  border-radius: $border-radius;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  
+  > p {
+    color: $title-color;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+}
