@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Legaplan Teste Dev Junior
 
-## Getting Started
+Este é um projeto desenvolvido como parte do teste de front-end da Legaplan, que consiste em criar uma todo-list.
 
-First, run the development server:
+[![Legaplan](./github/legaplan.png)](https://legaplan-frontend-teste.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[https://legaplan-frontend-teste.vercel.app/](https://legaplan-frontend-teste.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: Framework para React que oferece suporte a renderização no lado do servidor (SSR) e geração de sites estáticos (SSG).
+- **TypeScript**: Utilizado para adicionar tipagem estática ao projeto, facilitando a manutenção e prevenindo erros.
+- **SCSS**: Pré-processador CSS utilizado para organizar e reutilizar estilos de forma mais eficiente.
+- **Vercel**: Plataforma de deploy para Next.js, facilitando o deploy contínuo e escalável.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Funcionalidades
 
-## Learn More
+- **Exibição das Tasks**: A página inicial exibe todas as tasks do usuário.
+- **Manipulação de Tasks**: O Usuário consegue tanto como criar, deletar e "concluir" uma task.
+- **localStorage**: Os estados ficam armazenados dentro do localStorage, portanto se o usuário fechar sem querer a página os dados continuam salvos
+- **Context API**: Os estados das tasks são armazenados em um contexto global
+- **Responsividade**: O layout é totalmente responsivo, adaptando-se a diferentes dispositivos e tamanhos de tela, utilizando SCSS para controlar o design adaptativo.
 
-To learn more about Next.js, take a look at the following resources:
+## Desempenho
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[![Lighthouse](./github/lighthouse.png)](https://pagespeed.web.dev/analysis/https-legaplan-frontend-teste-vercel-app/y8bp9pot4k?form_factor=desktop&category=performance&category=accessibility&category=best-practices&category=seo&hl=pt&utm_source=lh-chrome-ext)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[lighHouse](https://pagespeed.web.dev/analysis/https-legaplan-frontend-teste-vercel-app/y8bp9pot4k?form_factor=desktop&category=performance&category=accessibility&category=best-practices&category=seo&hl=pt&utm_source=lh-chrome-ext)
 
-## Deploy on Vercel
+## Instalação e Execução
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para rodar o projeto localmente com **Next.js**, siga os passos abaixo:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Pré-requisitos:
+
+- **npm** ou **yarn** como gerenciador de pacotes
+
+### Passos:
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/gabrielneoob/legaplan-frontend-teste.git
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd legaplan-frontend-teste
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+
+4. Execute o projeto:
+
+   ```bash
+   npm run dev
