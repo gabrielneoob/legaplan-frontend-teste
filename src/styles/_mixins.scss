@@ -1,0 +1,7 @@
+@import './variables';
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: $breakpoint-small) { @content; }
+  } 
+}
