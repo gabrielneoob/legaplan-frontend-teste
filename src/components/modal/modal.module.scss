@@ -1,0 +1,75 @@
+@import '../../styles/variables';
+@import '../../styles//mixins';
+
+.background {
+  background-color: #FFFFFFCC;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  // @include respond-to(small) {
+  //   display: none;
+  //   position: unset;
+  // }
+}
+
+.container {
+  padding: 2rem;
+  background: #FFF;
+  box-shadow: 0px 24px 48px -12px #1018282E;
+  border-radius: 1rem;
+  width: 450px;
+
+  @include respond-to(small) {
+    height: 100%;
+    width: 100%;
+    > h3 {
+      margin-top: 2rem;
+    }
+  }
+
+  > h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  > p {
+    margin: 2rem 0;
+  }
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+
+  > label {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 8px;
+  }
+
+  > input {
+    color: #0000008F;
+    padding: 1rem;
+    outline: none;
+    border: 1px solid $input-color;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+
+  > button {
+    flex: 1;
+  }
+}
